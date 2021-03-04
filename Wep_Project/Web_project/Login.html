@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+    <link href="http://fonts.googleapis.com/earlyaccess/hanna.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet">
+       <style>
+        #Login_box {
+            width: 500px;
+            height: 595px;
+            position:relative;
+            left:50%; 
+            margin-left:-250px;            
+        }
+        #title{
+            font-size:200%;
+        }
+        #butt {
+	width: 200px;
+	height: 30px;
+	color:white;
+	letter-spacing: 5px; 
+	background-color: #7CBC42;
+	font-size:15px;
+	text-align: center;
+	transition: background-color 0.5s;
+	}
+       
+       #butt:hover{
+	background-color: #C7E456;
+       }
+	
+        .bgcolor{
+        	background: linear-gradient(#A4D07B,#FFFFFF)
+        }
+        .hn{font-family: 'Hanna', sans-serif;}
+        .jg{font-family: 'Jeju Gothic', sans-serif;}
+        body{
+	font-family: 'Hanna', sans-serif;
+	letter-spacing: 2px; 
+	height: 100%
+	}
+    </style>
+
+    <body class="bgcolor">
+        <div id = "title">    
+	<br><br><br>
+            <center>
+	<br>
+                <h1 class="jg">성균관대학교 시험 사이트</h1>
+	    <h3> 로그인 <h3>
+            </center>
+        </div>
+        <div id = "Login_box">
+            <center>
+            <br>
+            <FORM method="post" action="http://khsung0.dothome.co.kr/WEB_project/Login.php" onsubmit="return checkNull()" AUTOCOMPLETE="off">
+                아이디<br><br><input type="text" id="user_id" name = "user_id" autocomplete="off"><br><br>
+                비밀번호<br><br><input type="password" id = "user_pw" name = "user_pw" autocomplete="off"><br>
+                <br>
+                <br><br>
+                <input id="butt" class="hn" type="submit" value="로그인" name = "Login">
+            </FORM><br>
+            <FORM method="post" action="http://khsung0.dothome.co.kr/WEB_project/Register.html">
+                <input id="butt" class="hn" type="submit" value="회원가입" name = "Register">
+            </FORM>
+	
+            </center>
+        </div>
+	
+    </body>
+    <script>
+
+    function checkNull(){
+        if(document.getElementById('user_id').value.length==0){
+            alert("ID를 입력하세요");
+            return false;
+        }else if(document.getElementById('user_pw').value.length==0){
+            alert("PW를 입력하세요");
+            return false;
+        }else{
+        return true;
+        }
+    } 
+    </script>
+    
+
+
+    
+</html>
