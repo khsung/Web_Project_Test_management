@@ -5,4 +5,4 @@
 
 시험관리 홈페이지를 제작하였습니다.
 
-HTML/CSS, PHP, JavaScript로 작성하였으며 관리자(Admin), 교수(Professor), 학생() 3가지 역할로 나누어 각각의 기능을 작성하였습니다.
+HTML/CSS, PHP, JavaScript로 작성하였으며 관리자(Admin), 교수(Professor), 학생(Student) 3가지 역할로 나누어 각각의 기능을 작성하였습니다.
